@@ -1,0 +1,5 @@
+#! /bin/sh
+set -e
+
+libdir="$(pkg-config --variable=libdir libsodium)"
+objdump -p "$libdir/libsodium.so" | sed -ne '/ SONAME / { s/.* //; s/\.so\.//; p }'

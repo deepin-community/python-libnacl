@@ -1,0 +1,6 @@
+*.debhelper*
+*.substvars
+debhelper-build-stamp
+files
+python-libnacl
+python3-libnacl

@@ -1,0 +1,10 @@
+#! /usr/bin/make -f
+
+export PYBUILD_NAME := libnacl
+export PYBUILD_TEST_NOSE := 1
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Vlibsodium:Depends="$(shell debian/get-libsodium-depends)"

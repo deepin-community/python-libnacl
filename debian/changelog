@@ -1,0 +1,122 @@
+python-libnacl (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 16 Aug 2021 00:07:32 +0100
+
+python-libnacl (1.7.2-3) unstable; urgency=medium
+
+  * Team upload.
+  * Patch: Fix crypto_kdf_derive_from_key() on 32-bit platforms.
+    (Closes: #988102)
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 21 May 2021 16:35:48 -0400
+
+python-libnacl (1.7.2-2) unstable; urgency=medium
+
+  * Add Breaks: python3-duniterpy (<< 0.60.1) (see #974655).
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 14 Nov 2020 12:40:57 +0000
+
+python-libnacl (1.7.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Colin Watson ]
+  * New upstream release.
+    - Remove encoding parameter json.loads for Python 3.9 compatibility
+      (closes: #973199).
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 08 Nov 2020 16:48:53 +0000
+
+python-libnacl (1.7.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix unreliability in verify tests (closes: #922259).
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 10 Jan 2020 00:00:35 +0000
+
+python-libnacl (1.6.1-5) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #937888
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 15 Dec 2019 17:46:47 -0500
+
+python-libnacl (1.6.1-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/watch: Use https protocol
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Colin Watson ]
+  * Update Homepage field to use HTTPS.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 01 Mar 2019 12:54:35 +0000
+
+python-libnacl (1.6.1-3) unstable; urgency=medium
+
+  * Move VCS to salsa.debian.org.
+  * Switch Maintainer to the Debian Python Modules Team.
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 10 Feb 2018 02:38:53 +0000
+
+python-libnacl (1.6.1-2) unstable; urgency=medium
+
+  * Rebuild against libsodium23 (closes: #885934).
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 31 Dec 2017 15:30:10 +0000
+
+python-libnacl (1.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Set Rules-Requires-Root: no.
+  * Policy version 4.1.1.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 06 Nov 2017 16:41:49 +0000
+
+python-libnacl (1.5.2-3) unstable; urgency=medium
+
+  * Restore crypto_aead_aes256gcm_*BYTES on old CPUs.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 04 Aug 2017 10:05:26 +0100
+
+python-libnacl (1.5.2-2) unstable; urgency=medium
+
+  * Check whether AEAD functions are available (closes: #869241).
+  * Policy version 4.0.0.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 03 Aug 2017 10:40:21 +0100
+
+python-libnacl (1.5.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 21 Jul 2017 19:35:32 +0100
+
+python-libnacl (1.5.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 20 Jun 2017 11:08:46 +0100
+
+python-libnacl (1.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 15 Sep 2016 11:05:44 +0100
+
+python-libnacl (1.4.5-1) unstable; urgency=medium
+
+  * Initial release (closes: #781984).
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 24 May 2016 15:50:00 +0100
